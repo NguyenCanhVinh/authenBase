@@ -1,0 +1,25 @@
+spring.application.name=authenBase
+# ===============================
+# APPLICATION
+# ===============================
+server.port=8012
+# ===============================
+# DATABASE
+# ===============================
+spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+spring.datasource.url=jdbc:oracle:thin:@10.16.150.205:1521:xe
+spring.datasource.username=tra_cuu_service
+spring.datasource.password=tracuu123@2024
+# ===============================
+# SECURITY
+# ===============================
+security.jwt.secret=JWTSuper
+server.servlet.session.timeout=3600
+# ===============================
+# JPA / HIBERNATE
+# ===============================
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.Oracle10gDialect
+#spring.jpa.properties.hibernate.proc.param_null_passing = true
+# ===============================
